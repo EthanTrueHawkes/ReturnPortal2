@@ -53,3 +53,5 @@ Return another item starts a fresh flow with its own offer eligibility and prese
 - iPhone 15 Plus is the primary test device (430 × 932 CSS pixels). Desktop uses that frame; phones fill the available browser viewport as Safari toolbars resize. Mobile input text is 16px to avoid focus zoom.
 
 - Remove the simulated system status bar throughout the prototype and position sheets 12px below the browser content edge. The real iPhone status bar remains managed by iOS.
+
+- Mobile uses a viewport-fixed app shell and opaque safe-area fill to avoid Safari’s native scroll-edge blur. Scrolling stays inside the app; the safe-area fill matches the dimmed backdrop while a sheet is open.

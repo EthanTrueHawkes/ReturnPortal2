@@ -413,6 +413,8 @@
 /* iPhone 15 Plus is the 430 × 932 baseline; use Safari’s actual viewport on phones. */
 @media (max-width:600px) {
   .phone {
+    position:fixed;
+    inset:0;
     width:100vw;
     height:100dvh;
     min-height:0;
@@ -422,7 +424,25 @@
     height:calc(56px + env(safe-area-inset-top, 0px));
     padding-top:env(safe-area-inset-top, 0px);
   }
-  html, body { background:var(--surface-background); }
+  html, body {
+    background:var(--surface-background);
+    overflow:hidden;
+    overscroll-behavior:none;
+  }
+  /* An opaque viewport-fixed top edge keeps Safari from blending the header
+     into its system scroll-edge pocket. The app's own scroll areas remain active. */
+  body::before {
+    content:'';
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    height:max(1px, env(safe-area-inset-top, 0px));
+    z-index:20;
+    background:var(--surface-background);
+    pointer-events:none;
+  }
+  body:has(.return-flow)::before { background:#737475; }
   html:has(.return-flow), body:has(.return-flow) { background:#737475; }
   input { font-size:16px; }
 }
