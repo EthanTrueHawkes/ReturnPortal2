@@ -118,6 +118,10 @@ export default function App() {
         }
     }
     const modal = ['3', '3.1', '3.2', '4', '5-front', '5-back', '4.2'].includes(screen);
+    useEffect(() => {
+        // Match Safari's surrounding browser area to the flat modal backdrop.
+        document.querySelector('meta[name="theme-color"]')?.setAttribute('content', modal ? '#737475' : '#f7f8f9');
+    }, [modal]);
     return <div className="phone" data-current-screen={screen}>
     <div ref={scroll} className="screen-scroll" inert={modal}>
   {screen === '1' && <Login onContinue={() => go('2')}/>}
