@@ -425,3 +425,13 @@
     min-width:130px
   }
 }
+
+/* Use the real browser viewport on phones; retain the design frame on desktop. */
+@media (max-width:600px) {
+  .phone {
+    width:100vw;
+    height:100dvh;
+    min-height:0;
+    border-radius:0;
+  }
+}
