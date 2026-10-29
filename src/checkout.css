@@ -1,0 +1,458 @@
+/* 7: provider cards and expanded location/pickup layouts. */
+.zip-pill {
+  padding:0 16px;
+  height:40px;
+  border-radius:360px;
+  box-shadow:var(--shadow-button);
+  display:flex;
+  align-items:center;
+  gap:4px;
+  background:#ffffff1a
+}
+.location-content {
+  padding:24px 16px 40px
+}
+.location-group {
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  margin-top:24px
+}
+.location-group>h2 {
+  margin-bottom:0
+}
+.location-group.dropoff {
+  margin-top:24px;
+  gap:12px
+}
+.filter-chips {
+  display:flex;
+  gap:8px;
+  margin-bottom:4px
+}
+.filter-chips>button {
+  background:var(--surface-sunked);
+  color:var(--text-secondary);
+  border-radius:12px;
+  padding:8px 12px;
+  font-weight:600;
+  border:1px solid transparent
+}
+.filter-chips>button[aria-pressed=true] {
+  border-color:var(--text-brand);
+  box-shadow:inset 0 0 0 1px var(--text-brand);
+  color:var(--text-brand)
+}
+.location-card {
+  transition:background-color 240ms ease;
+  border:1px solid var(--border-secondary);
+  border-radius:24px;
+  overflow:hidden
+}
+/* Keep details mounted so opening and closing both animate to their natural height. */
+.location-expansion { display:grid; grid-template-rows:0fr; overflow:hidden; transition:grid-template-rows 280ms ease; }
+.location-card.expanded .location-expansion { grid-template-rows:1fr; }
+.location-expansion-inner { min-height:0; overflow:hidden; }
+.location-expansion .location-details { opacity:0; transform:translateY(-6px); transition:opacity 180ms ease, transform 240ms ease; }
+.location-card.expanded .location-details { opacity:1; transform:translateY(0); transition-delay:40ms; }
+@media(prefers-reduced-motion:reduce) { .location-card, .location-expansion, .location-expansion .location-details { transition:none; transform:none; } }
+.location-card.expanded {
+  background:var(--surface-elevated)
+}
+.location-card-head {
+  background:transparent;
+  width:100%;
+  height:86px;
+  display:flex;
+  align-items:center;
+  padding:0 16px 0 0;
+  text-align:left
+}
+.carrier-logo {
+  width:60px;
+  flex:none;
+  display:grid;
+  place-items:center
+}
+.carrier-logo>img {
+  width:36px;
+  height:64px;
+  object-fit:contain
+}
+.location-copy {
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  flex:1
+}
+.location-copy>strong,.location-price {
+  font-weight:600;
+  text-box-trim:trim-both;
+  text-box-edge:cap alphabetic
+}
+.location-copy>p,.location-price {
+  color:var(--text-secondary)
+}
+.location-price {
+  margin-left:8px;
+  white-space:nowrap
+}
+.requirements {
+  display:flex;
+  gap:8px;
+  color:var(--text-secondary);
+  white-space:nowrap
+}
+.requirements>span {
+  display:flex;
+  gap:4px;
+  align-items:center
+}
+.location-details {
+  padding:8px 16px 16px
+}
+.location-unavailable {
+  margin-top:16px;
+  color:var(--text-secondary)
+}
+.location-details>.button {
+  margin-top:24px
+}
+.pickup-slots {
+  display:flex;
+  flex-direction:column;
+  gap:24px
+}
+.slot-row {
+  display:flex;
+  gap:8px;
+  margin-top:12px
+}
+.slot-row>button {
+  background:var(--surface-sunked);
+  font-weight:600;
+  color:var(--text-secondary);
+  white-space:nowrap;
+  flex:1;
+  padding:8px 4px;
+  border:1px solid transparent;
+  border-radius:12px
+}
+.slot-row>button[aria-pressed=true] {
+  border-color:var(--text-brand);
+  box-shadow:inset 0 0 0 1px var(--text-brand);
+  color:var(--text-brand);
+  background:var(--surface-sunked)
+}
+.more-times {
+  text-align:center;
+  color:var(--text-secondary);
+  margin:24px 0
+}
+.location-map {
+  width:100%;
+  height:180px;
+  position:relative;
+  overflow:hidden;
+  border-radius:16px;
+  display:block;
+  margin-bottom:24px
+}
+.location-map > img {
+  position:absolute;
+  width:572px;
+  height:396px;
+  left:-121px;
+  top:-108px;
+  object-fit:cover;
+}
+.map-address {
+  position:absolute;
+  left:8px;
+  right:8px;
+  top:140px;
+  height:32px;
+  background:var(--surface-elevated);
+  box-shadow:var(--shadow-button);
+  border-radius:12px;
+  padding:8px;
+  display:flex;
+  gap:4px;
+  align-items:center;
+}
+.map-address > p {
+  font-size:13px;
+  min-width:0;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  text-box-trim:none;
+}
+.location-disclosure {
+  display:flex;
+  gap:12px;
+  align-items:center;
+  margin-top:24px
+}
+.location-disclosure>div {
+  flex:1;
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  gap:8px
+}
+.location-disclosure p {
+  color:var(--text-secondary)
+}
+.open-now {
+  color:var(--text-success)
+}
+/* 8: review rows and receipt summary. Long content scrolls within the phone. */
+.review-content {
+  padding:24px 16px 40px
+}
+.refund-description {
+  color:var(--text-secondary);
+  margin-top:18px
+}
+.review-detail-card > .icon {
+  transform:rotate(180deg);
+}
+.review-detail-card {
+  display:flex;
+  align-items:center;
+  gap:16px;
+  border:1px solid var(--border-secondary);
+  border-radius:16px;
+  padding:18px 16px;
+  width:100%;
+  text-align:left;
+  background:transparent
+}
+.review-detail-card>div {
+  flex:1;
+  min-width:0;
+  display:flex;
+  flex-direction:column;
+  gap:12px
+}
+.review-detail-card p {
+  color:var(--text-secondary);
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  text-box-trim:none;
+  line-height:18px;
+  margin:-4px 0
+}
+.refund-method {
+  margin-top:24px;
+  justify-content:space-between;
+  min-height:58px
+}
+.review-group {
+  margin-top:24px
+}
+.review-group>h2 {
+  margin-bottom:12px
+}
+.review-item {
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-top:16px
+}
+.review-item>.item-image,.review-return-photo {
+  width:88px;
+  height:88px;
+  border-radius:16px;
+  overflow:hidden;
+  flex:none
+}
+.review-return-photo>img {
+  width:100%;
+  height:100%;
+  object-fit:cover
+}
+.review-item>div:not(.item-image):not(.product-photo):not(.review-return-photo) {
+  min-width:0;
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:12px
+}
+.review-item h3 {
+  line-height:18px
+}
+.review-item p {
+  color:var(--text-secondary)
+}
+.review-item>span {
+  color:var(--text-tertiary);
+  font-size:14px;
+  white-space:nowrap
+}
+.review-item>.product-photo {
+  width:88px;
+  height:88px;
+  flex:none
+}
+.delivery-note {
+  display:flex;
+  align-items:center;
+  gap:4px
+}
+.return-another {
+  background:var(--surface-sunked);
+  color:var(--text-secondary);
+  min-height:40px;
+  border-radius:16px;
+  margin-top:12px
+}
+.return-another>span {
+  display:flex;
+  align-items:center;
+  gap:4px
+}
+.return-another:disabled {
+  opacity:.5
+}
+.delivery-group {
+  margin-top:40px
+}
+.delivery-group .review-detail-card {
+  padding:12px 16px;
+}
+.delivery-group .review-detail-card strong,
+.delivery-group .review-detail-card p {
+  text-box-trim:trim-both;
+  text-box-edge:cap alphabetic;
+  margin:0;
+}
+.return-location {
+  margin-top:40px
+}
+.review-carrier {
+  width:33.333px;
+  height:39.557px;
+  object-fit:contain
+}
+.return-location .review-detail-card {
+  padding:16px 12px;
+  gap:12px
+}
+.return-location .review-detail-card > div {
+  gap:10px;
+}
+.return-location .review-detail-card strong,
+.return-location .review-detail-card p {
+  text-box-trim:trim-both;
+  text-box-edge:cap alphabetic;
+}
+.return-location .review-detail-card p {
+  white-space:normal;
+  overflow:visible;
+  margin:0;
+}
+.return-location .requirements {
+  flex-wrap:wrap;
+  gap:8px;
+  font-size:14px
+}
+.return-location .review-detail-card p {
+  font-size:14px
+}
+.review-totals {
+  margin-top:48px
+}
+.receipt-divider {
+  height:7px;
+  overflow:hidden;
+  margin-bottom:24px
+}
+.receipt-divider>img {
+  display:block
+}
+.total-row {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-weight:600;
+  color:var(--text-secondary);
+  margin-top:12px
+}
+.total-row>span:first-child {
+  display:flex;
+  align-items:center;
+  gap:8px
+}
+.grand-total {
+  margin-top:24px;
+  color:var(--text-primary);
+  font-size:18px
+}
+.grand-total>span {
+  font-size:14px;
+  color:var(--text-tertiary);
+  display:flex;
+  align-items:center;
+  gap:8px
+}
+.grand-total>span>strong {
+  font-size:18px;
+  color:var(--text-success)
+}
+.confirm-return {
+  margin-top:32px
+}
+/* User-requested completion screen. Confetti stays inside the phone viewport. */
+.thank-you {
+  min-height:100%;
+  position:relative
+}
+.thanks-brand {
+  display:block;
+  width:76.992px;
+  height:32px;
+  margin:16px auto
+}
+.thanks-copy {
+  position:absolute;
+  top:330px;
+  width:100%;
+  padding:0 32px;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:24px
+}
+.thanks-copy>p {
+  color:var(--text-secondary)
+}
+.confetti {
+  position:absolute;
+  inset:0;
+  overflow:hidden;
+  pointer-events:none
+}
+.confetti>i {
+  position:absolute;
+  top:-20px;
+  width:8px;
+  height:16px;
+  animation:confetti-fall 2.8s ease-in infinite
+}
+@keyframes confetti-fall {
+  to {
+    translate:24px 900px;
+    rotate:540deg
+  }
+}
+@media(prefers-reduced-motion:reduce) {
+  .confetti>i {
+    animation:none;
+    top:18%;
+    opacity:.5
+  }
+}

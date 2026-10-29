@@ -1,0 +1,117 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/d2eeaffa-4729-4971-93ef-45082f959ec8";
+const imgImage38 = `${assetPathPrefix}/12015.png`;
+const imgImage13 = `${assetPathPrefix}/f531a.png`;
+const imgFrame = `${assetPathPrefix}/898c5.svg`;
+const imgFrame1 = `${assetPathPrefix}/8ada2.svg`;
+const imgFrame2 = `${assetPathPrefix}/9d94b.svg`;
+const imgFrame3 = `${assetPathPrefix}/c3a17.svg`;
+
+export default function ReturnPortal6Alternate() {
+  return (
+    <div className="bg-[var(--surface\/background,#f7f8f9)] overflow-clip relative rounded-[40px] size-full" data-node-id="399:14400" data-name="Return Portal 6 alternate">
+      <div className="absolute content-stretch flex flex-col items-center left-[25px] top-[922px] w-[344px]" data-node-id="399:14401">
+        <div className="border border-[var(--text\/danger,#b42318)] border-solid content-stretch flex h-[40px] items-center justify-between overflow-clip px-[16px] py-[14px] relative rounded-[12px] shrink-0 w-full" data-node-id="399:14402">
+          <div className="content-stretch flex gap-[6px] items-center relative shrink-0" data-node-id="399:14403">
+            <div className="relative shrink-0 size-[16px]" data-node-id="399:14404" data-name="Frame">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+            </div>
+            <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/danger,#b42318)] text-center whitespace-nowrap" data-node-id="399:14408">
+              English
+            </p>
+          </div>
+          <div className="relative shrink-0 size-[16px]" data-node-id="399:14409" data-name="Frame">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame1} />
+          </div>
+        </div>
+      </div>
+      <div className="absolute content-stretch cursor-pointer flex flex-col gap-[8px] items-start left-0 pb-[32px] px-[16px] top-[716px] w-[393px]" data-node-id="399:14411">
+        <a className="bg-[var(--surface\/black,#1c2024)] content-stretch flex h-[48px] items-center justify-center overflow-clip px-[108px] py-[6px] relative rounded-[16px] shrink-0 w-full" data-node-id="399:14412">
+          <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/invert,white)] text-left whitespace-nowrap" data-node-id="399:14413">
+            Keep item, $15.90 refund
+          </p>
+        </a>
+        <a className="content-stretch flex h-[48px] items-center justify-center overflow-clip px-[108px] py-[6px] relative rounded-[16px] shrink-0 w-full" data-node-id="399:14414">
+          <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,#1c2024)] text-left whitespace-nowrap" data-node-id="399:14415">
+            Continue with return, full refund
+          </p>
+        </a>
+      </div>
+      <div className="-translate-x-1/2 absolute bg-[var(--surface\/background,#f7f8f9)] content-stretch flex flex-col gap-[8px] items-start left-1/2 pb-[8px] top-0 w-[393px]" data-node-id="399:14416" data-name="Header">
+        <CodeConnectSnippet data-node-id="399:14417" data-name="Status bar - iPhone">
+          {/* iOS and iPadOS 26 component */}
+          <StatusBarIPhone textTime="9:41" time="9:41" variantSize="iPhone 16 Pro and 16 Max" size="iPhone 16 Pro and 16 Max" />
+        </CodeConnectSnippet>
+        <div className="content-stretch flex items-center justify-between px-[16px] relative shrink-0 w-full" data-node-id="399:14418">
+          <div className="bg-[rgba(255,255,255,0.1)] content-stretch flex flex-col items-center justify-center p-[8px] relative rounded-[360px] shadow-[0px_3px_12px_0px_rgba(0,0,0,0.05)] shrink-0 size-[40px]" data-node-id="399:14419">
+            <div className="relative shrink-0 size-[20px]" data-node-id="399:14420" data-name="Frame">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame2} />
+            </div>
+          </div>
+          <div className="content-stretch flex items-center relative shrink-0" data-node-id="399:14422">
+            <div className="h-[24px] relative shrink-0 w-[57.744px]" data-node-id="399:14423" data-name="image 38">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage38} />
+            </div>
+          </div>
+          <div className="bg-[rgba(255,255,255,0.1)] content-stretch flex items-center justify-center overflow-clip p-[8px] relative rounded-[360px] shadow-[0px_3px_12px_0px_rgba(0,0,0,0.05)] shrink-0 size-[40px]" data-node-id="399:14424">
+            <div className="relative shrink-0 size-[20px]" data-node-id="399:14425" data-name="Frame">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame3} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[16px] items-center left-[49px] not-italic text-center top-[142px] w-[295px]" data-node-id="399:14428">
+        <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Inter:Semi_Bold'] font-semibold leading-[0] min-w-full relative shrink-0 text-[0px] text-[color:var(--text\/primary,#1c2024)] w-[min-content]" data-node-id="399:14429">
+          <span className="leading-[24px] text-[18px]">{`Keep the item, get `}</span>
+          <span className="font-['Inter:Semi_Bold_Italic'] italic leading-[normal] text-[#067647] text-[18px]">$15.90</span>
+          <span className="font-['Inter:Semi_Bold_Italic'] italic leading-[normal] text-[#1c2024] text-[18px]">{` `}</span>
+          <span className="leading-[24px] text-[#1c2024] text-[18px]">back</span>
+        </p>
+        <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Inter:Regular'] font-normal h-[29px] leading-[22px] relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] w-[295px]" data-node-id="399:14430">
+          Get $15.90 back to your original payment method, without returning the item
+        </p>
+      </div>
+      <div className="absolute content-stretch flex flex-col items-start left-[49px] top-[224px]" data-node-id="399:14431">
+        <div className="content-stretch flex flex-col gap-[19.585px] items-center relative shrink-0 w-full" data-node-id="399:14432">
+          <div className="overflow-clip relative rounded-[32px] shrink-0 size-[293.776px]" data-node-id="399:14433">
+            <div className="absolute left-[-1.84px] size-[296.836px] top-[-2.45px]" data-node-id="399:14435" data-name="image 13">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage13} />
+            </div>
+          </div>
+          <div className="[word-break:break-word] content-stretch flex flex-col gap-[14.689px] items-center leading-[18px] not-italic relative shrink-0 text-[14px] w-[295px]" data-node-id="399:14436">
+            <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Inter:Semi_Bold'] font-semibold min-w-full relative shrink-0 text-[color:var(--text\/primary,#1c2024)] text-center w-[min-content]" data-node-id="399:14437">{`'94 Baggy Wide Leg Women's Jeans`}</p>
+            <div className="content-stretch flex font-['Inter:Regular'] font-normal gap-[4.896px] items-center relative shrink-0 text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="399:14438">
+              <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] relative shrink-0" data-node-id="399:14439">
+                Light Indigo
+              </p>
+              <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] relative shrink-0" data-node-id="399:14440">
+                ·
+              </p>
+              <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] relative shrink-0" data-node-id="399:14441">
+                26/30
+              </p>
+            </div>
+            <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Inter:Semi_Bold'] font-semibold relative shrink-0 text-[color:var(--text\/primary,#1c2024)] whitespace-nowrap" data-node-id="399:14442">
+              $79.50
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Label/default-regular: Font(family: "Inter", style: Regular, size: 14, weight: 400, lineHeight: 18, letterSpacing: 0), Label/default-strong: Font(family: "Inter", style: Semi Bold, size: 14, weight: 600, lineHeight: 18, letterSpacing: 0), Body/default-regular: Font(family: "Inter", style: Regular, size: 14, weight: 400, lineHeight: 22, letterSpacing: 0).
+
+If the node is connected to a code component in the users codebase via Code Connect, the connected component will be included in the final markup wrapped in a CodeConnectSnippet element, with relevant imports at the top of the file. There are two formats: 1. Single snippet: <CodeConnectSnippet data-snippet-language="React"><TitleComponent>Hello World</TitleComponent></CodeConnectSnippet> 2. Multiple options: <CodeConnectSnippet data-snippet-language="React" options={[<Button variant="primary" />, <Button variant="secondary" />]} /> IMPORTANT: the CodeConnectSnippet wrapper element should not be part of the final code. For the options format, choose the single most appropriate option to use in your implementation. The source of the code component will be in the import path, e.g. import {ComponentName } from 'path/to/component'; IMPORTANT: the import path may not be relative/may point to a URL, so you should search for the component in the codebase and MUST use it if possible.
+
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

@@ -1,0 +1,74 @@
+/* Extracted from the AI Work Figma page;
+names mirror the source. */
+:root {
+  --text-primary:#1c2024;
+  --text-secondary:#53585d;
+  --text-tertiary:#71777d;
+  --text-invert:#fff;
+  --text-brand:#124fc6;
+  --text-success:#067647;
+  --surface-background:#f7f8f9;
+  --surface-elevated:#fff;
+  --surface-sunked:#e9ecef;
+  --surface-dark:#b8bec3;
+  --surface-black:#1c2024;
+  --border-secondary:#d2d6da;
+  --border-light:#fff;
+  --border-full:#1c2024;
+  --border-selection:#0563ef;
+  --space-4:4px;
+  --space-6:6px;
+  --space-8:8px;
+  --space-10:10px;
+  --space-12:12px;
+  --space-16:16px;
+  --space-20:20px;
+  --space-24:24px;
+  --space-28:28px;
+  --space-32:32px;
+  --space-40:40px;
+  --radius-8:8px;
+  --radius-12:12px;
+  --radius-16:16px;
+  --radius-24:24px;
+  --radius-32:32px;
+  --radius-40:40px;
+  --radius-round:360px;
+  --shadow-button:0 3px 12px #0000000d;
+  --shadow-sheet:0 -1px 3px #0000000d,0 -4px 12px #0000001a,0 -12px 36px #00000033;
+  --font-family:'Inter',sans-serif;
+  --phone-width:393px;
+  --phone-height:852px;
+}
+/* Figma text styles;
+cap trimming retains the source's measured gaps. */
+.title-page {
+  font-size:18px;
+  font-weight:600;
+  line-height:24px
+}
+.heading-section {
+  font-size:16px;
+  font-weight:600;
+  line-height:24px
+}
+.label-strong {
+  font-size:14px;
+  font-weight:600;
+  line-height:18px
+}
+.label-regular {
+  font-size:14px;
+  font-weight:400;
+  line-height:18px
+}
+.body-regular {
+  font-size:14px;
+  font-weight:400;
+  line-height:22px
+}
+.label-small {
+  font-size:12px;
+  font-weight:600;
+  line-height:16px
+}

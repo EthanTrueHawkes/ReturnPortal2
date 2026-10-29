@@ -1,0 +1,59 @@
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/600.css';
+@import './design-system/tokens/tokens.css';
+* {
+  box-sizing:border-box
+}
+body {
+  margin:0;
+  background:var(--surface-sunked);
+  color:var(--text-primary);
+  font-family:var(--font-family);
+  font-size:14px;
+  line-height:18px
+}
+button,input {
+  font:inherit;
+  color:inherit
+}
+button {
+  cursor:pointer;
+  border:0
+}
+button:disabled {
+  cursor:default
+}
+button,input {
+  -webkit-tap-highlight-color:transparent
+}
+button:focus-visible,input:focus-visible {
+  outline:2px solid var(--border-selection);
+  outline-offset:3px
+}
+p,h1,h2,h3 {
+  margin:0;
+  text-box-trim:trim-both;
+  text-box-edge:cap alphabetic
+}
+fieldset {
+  border:0;
+  padding:0;
+  margin:0;
+  min-width:0
+}
+legend {
+  padding:0
+}
+input {
+  min-width:0
+}
+#root {
+  min-height:100dvh;
+  display:grid;
+  place-items:center
+}
+.icon {
+  display:inline-block;
+  flex:none;
+  vertical-align:middle
+}

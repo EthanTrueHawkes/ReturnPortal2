@@ -1,0 +1,285 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/00ea13fd-e927-4025-8a96-9304ba29b14a";
+const imgImage12 = `${assetPathPrefix}/49a1e.png`;
+const imgImage13 = `${assetPathPrefix}/c542f.png`;
+const imgImage14 = `${assetPathPrefix}/171f0.png`;
+const imgImage15 = `${assetPathPrefix}/29a7f.png`;
+const imgImage16 = `${assetPathPrefix}/f1223.png`;
+const imgImage17 = `${assetPathPrefix}/ea80f.png`;
+const imgFrame = `${assetPathPrefix}/b950e.svg`;
+const imgFrame1 = `${assetPathPrefix}/9d94b.svg`;
+const imgFrame2 = `${assetPathPrefix}/bb300.svg`;
+const imgFrame3 = `${assetPathPrefix}/bd6bd.svg`;
+const imgFrame4 = `${assetPathPrefix}/05a08.svg`;
+
+type ButtonProps = {
+  className?: string;
+  buttonTitle?: string;
+  type?: "Default";
+};
+
+function Button({ className, buttonTitle = "Button Text", type = "Default" }: ButtonProps) {
+  return (
+    <a className={className || "bg-[var(--surface\\/black,#1c2024)] content-stretch cursor-pointer flex h-[48px] items-center justify-center overflow-clip px-[108px] py-[6px] relative rounded-[16px] w-[361px]"} data-node-id="418:15790">
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/invert,white)] text-left whitespace-nowrap" data-node-id="418:15789">
+        {buttonTitle}
+      </p>
+    </a>
+  );
+}
+
+function ExchangeCard({ className }: { className?: string }) {
+  return (
+    <div className={className || "content-stretch flex flex-col gap-[12px] items-start pb-[8px] relative w-[165px]"} data-node-id="420:16832" data-name="Exchange-Card">
+      <div className="h-[200px] overflow-clip relative rounded-[16px] shrink-0 w-full" data-node-id="420:16824">
+        <div className="absolute h-[200px] left-[-24px] top-0 w-[217px]" data-node-id="420:16825" data-name="image 12">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute h-[148.75%] left-[-23.78%] max-w-none top-[-48.78%] w-[146.97%]" src={imgImage12} />
+          </div>
+        </div>
+      </div>
+      <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="420:16826">
+        <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,#1c2024)] whitespace-nowrap" data-node-id="420:16827">
+          Baggy Dad Barrel Jeans
+        </p>
+        <div className="content-stretch flex flex-col gap-[10px] items-start relative shrink-0 w-full" data-node-id="420:16828">
+          <div className="content-stretch flex items-end relative shrink-0 w-full" data-node-id="420:16829">
+            <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,#1c2024)] whitespace-nowrap" data-node-id="420:16830">
+              $60.00
+            </p>
+          </div>
+          <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/tertiary,#71777d)] whitespace-nowrap" data-node-id="420:16831">
+            Exchange covers
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function ReturnPortal6() {
+  return (
+    <div className="bg-[var(--surface\/background,#f7f8f9)] overflow-clip relative rounded-[32px] size-full" data-node-id="399:14443" data-name="Return Portal 6">
+      <div className="absolute content-stretch flex flex-col gap-[24px] items-start left-[16px] top-[269px] w-[361px]" data-node-id="399:14444">
+        <div className="bg-[var(--surface\/sunked,#e9ecef)] content-stretch flex gap-[8px] h-[40px] items-center overflow-clip px-[12px] py-[14px] relative rounded-[8px] shrink-0 w-[361px]" data-node-id="426:17235" data-name="Search-Bar">
+          <div className="relative shrink-0 size-[16px]" data-node-id="I426:17235;426:17213" data-name="Frame">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+          </div>
+          <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] text-center whitespace-nowrap" data-node-id="I426:17235;426:17216">
+            Search Levi’s...
+          </p>
+        </div>
+        <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-full" data-node-id="399:14450">
+          <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[24px] not-italic relative shrink-0 text-[16px] text-[color:var(--text\/primary,#1c2024)] whitespace-nowrap" data-node-id="399:14451">
+            More Pants
+          </p>
+          <div className="content-stretch flex gap-[16px] items-center relative shrink-0" data-node-id="426:17044">
+            <ExchangeCard className="content-stretch flex flex-col gap-[12px] items-start pb-[8px] relative shrink-0 w-[165px]" />
+            <div className="content-stretch flex flex-col gap-[12px] items-start pb-[8px] relative shrink-0 w-[165px]" data-node-id="426:17046" data-name="Exchange-Card">
+              <div className="h-[200px] overflow-clip relative rounded-[16px] shrink-0 w-full" data-node-id="I426:17046;420:16824">
+                <div className="absolute h-[200px] left-[-24px] top-0 w-[217px]" data-node-id="I426:17046;420:16825" data-name="image 12">
+                  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                    <img alt="" className="absolute h-[153.44%] left-[-20.71%] max-w-none top-[-53.5%] w-[141.42%]" src={imgImage13} />
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="I426:17046;420:16826">
+                <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,#1c2024)] whitespace-nowrap" data-node-id="I426:17046;420:16827">
+                  Teardrop Wide Leg Je...
+                </p>
+                <div className="content-stretch flex flex-col gap-[10px] items-start relative shrink-0 w-full" data-node-id="I426:17046;420:16828">
+                  <div className="content-stretch flex items-end relative shrink-0 w-full" data-node-id="I426:17046;420:16829">
+                    <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,#1c2024)] whitespace-nowrap" data-node-id="I426:17046;420:16830">
+                      $88.43
+                    </p>
+                  </div>
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/tertiary,#71777d)] whitespace-nowrap" data-node-id="I426:17046;420:16831">
+                    Exchange covers
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col gap-[12px] items-start pb-[8px] relative shrink-0 w-[165px]" data-node-id="426:17047" data-name="Exchange-Card">
+              <div className="h-[200px] overflow-clip relative rounded-[16px] shrink-0 w-full" data-node-id="I426:17047;420:16824">
+                <div className="absolute h-[200px] left-[-24px] top-0 w-[217px]" data-node-id="I426:17047;420:16825" data-name="image 12">
+                  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                    <img alt="" className="absolute h-[150.43%] left-[-19.43%] max-w-none top-[-50.64%] w-[138.86%]" src={imgImage14} />
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="I426:17047;420:16826">
+                <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,#1c2024)] whitespace-nowrap" data-node-id="I426:17047;420:16827">
+                  Loose Boot Women’s J...
+                </p>
+                <div className="content-stretch flex flex-col gap-[10px] items-start relative shrink-0 w-full" data-node-id="I426:17047;420:16828">
+                  <div className="content-stretch flex items-end relative shrink-0 w-full" data-node-id="I426:17047;420:16829">
+                    <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,#1c2024)] whitespace-nowrap" data-node-id="I426:17047;420:16830">
+                      $58.43
+                    </p>
+                  </div>
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/tertiary,#71777d)] whitespace-nowrap" data-node-id="I426:17047;420:16831">
+                    Exchange covers
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[8px] items-start relative shrink-0 w-[361px]" data-node-id="426:17150">
+          <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[24px] not-italic relative shrink-0 text-[16px] text-[color:var(--text\/primary,#1c2024)] whitespace-nowrap" data-node-id="426:17151">
+            Popular Picks
+          </p>
+          <div className="content-stretch flex gap-[16px] items-center relative shrink-0" data-node-id="426:17152">
+            <div className="content-stretch flex flex-col gap-[12px] items-start pb-[8px] relative shrink-0 w-[165px]" data-node-id="426:17153" data-name="Exchange-Card">
+              <div className="h-[200px] overflow-clip relative rounded-[16px] shrink-0 w-full" data-node-id="I426:17153;420:16824">
+                <div className="absolute h-[200px] left-[-24px] top-0 w-[217px]" data-node-id="I426:17153;420:16825" data-name="image 12">
+                  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                    <img alt="" className="absolute h-[145.24%] left-[-17.03%] max-w-none top-[-11.26%] w-[134.06%]" src={imgImage15} />
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="I426:17153;420:16826">
+                <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,#1c2024)] whitespace-nowrap" data-node-id="I426:17153;420:16827">
+                  Vintage Short-sleeve...
+                </p>
+                <div className="content-stretch flex flex-col gap-[10px] items-start relative shrink-0 w-full" data-node-id="I426:17153;420:16828">
+                  <div className="content-stretch flex items-end relative shrink-0 w-full" data-node-id="I426:17153;420:16829">
+                    <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,#1c2024)] whitespace-nowrap" data-node-id="I426:17153;420:16830">
+                      $35.00
+                    </p>
+                  </div>
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/tertiary,#71777d)] whitespace-nowrap" data-node-id="I426:17153;420:16831">
+                    Exchange covers
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col gap-[12px] items-start pb-[8px] relative shrink-0 w-[165px]" data-node-id="426:17154" data-name="Exchange-Card">
+              <div className="h-[200px] overflow-clip relative rounded-[16px] shrink-0 w-full" data-node-id="I426:17154;420:16824">
+                <div className="absolute h-[200px] left-[-24px] top-0 w-[217px]" data-node-id="I426:17154;420:16825" data-name="image 12">
+                  <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                    <img alt="" className="absolute h-[121.48%] left-[-6.07%] max-w-none top-[-12.51%] w-[112.14%]" src={imgImage16} />
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="I426:17154;420:16826">
+                <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,#1c2024)] whitespace-nowrap" data-node-id="I426:17154;420:16827">
+                  Kate Mini Dress
+                </p>
+                <div className="content-stretch flex flex-col gap-[10px] items-start relative shrink-0 w-full" data-node-id="I426:17154;420:16828">
+                  <div className="content-stretch flex items-end relative shrink-0 w-full" data-node-id="I426:17154;420:16829">
+                    <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,#1c2024)] whitespace-nowrap" data-node-id="I426:17154;420:16830">{`$90.00 `}</p>
+                  </div>
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/tertiary,#71777d)] whitespace-nowrap" data-node-id="I426:17154;420:16831">
+                    Exchange covers
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col gap-[12px] items-start pb-[8px] relative shrink-0 w-[165px]" data-node-id="426:17155" data-name="Exchange-Card">
+              <div className="h-[200px] overflow-clip relative rounded-[16px] shrink-0 w-full" data-node-id="I426:17155;420:16824">
+                <div className="absolute h-[200px] left-[-24px] top-0 w-[217px]" data-node-id="I426:17155;420:16825" data-name="image 12">
+                  <div aria-hidden className="absolute inset-0 pointer-events-none">
+                    <div className="absolute inset-0 overflow-hidden">
+                      <img alt="" className="absolute h-[121.48%] left-[-6.07%] max-w-none top-[-12.51%] w-[112.14%]" src={imgImage16} />
+                    </div>
+                    <div className="absolute inset-0 overflow-hidden">
+                      <img alt="" className="absolute h-[137.65%] left-[-17.71%] max-w-none top-[-26.92%] w-[127.06%]" src={imgImage17} />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="I426:17155;420:16826">
+                <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,#1c2024)] whitespace-nowrap" data-node-id="I426:17155;420:16827">
+                  Pauline Pointelle Short...
+                </p>
+                <div className="content-stretch flex flex-col gap-[10px] items-start relative shrink-0 w-full" data-node-id="I426:17155;420:16828">
+                  <div className="content-stretch flex items-end relative shrink-0 w-full" data-node-id="I426:17155;420:16829">
+                    <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,#1c2024)] whitespace-nowrap" data-node-id="I426:17155;420:16830">{`$80.00 `}</p>
+                  </div>
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/tertiary,#71777d)] whitespace-nowrap" data-node-id="I426:17155;420:16831">
+                    Exchange covers
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="[word-break:break-word] absolute content-stretch flex flex-col gap-[12px] items-start left-[16px] not-italic top-[194px] w-[361px]" data-node-id="399:14510">
+        <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Inter:Semi_Bold'] font-semibold leading-[24px] relative shrink-0 text-[18px] text-[color:var(--text\/primary,#1c2024)] w-full" data-node-id="399:14511">
+          Want something different?
+        </p>
+        <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Inter:Regular'] font-normal leading-[22px] relative shrink-0 text-[14px] text-[color:var(--text\/tertiary,#71777d)] w-full" data-node-id="399:14512">{`Find a new item with $12.59 extra on us, or continue with your return to get a full refund. `}</p>
+      </div>
+      <div className="-translate-x-1/2 absolute bg-[var(--surface\/background,#f7f8f9)] content-stretch flex flex-col gap-[8px] items-start left-1/2 pb-[12px] top-0 w-[393px]" data-node-id="399:14513" data-name="Header">
+        <CodeConnectSnippet data-node-id="399:14514" data-name="Status bar - iPhone">
+          {/* iOS and iPadOS 26 component */}
+          <StatusBarIPhone textTime="9:41" time="9:41" variantSize="iPhone 16 Pro and 16 Max" size="iPhone 16 Pro and 16 Max" />
+        </CodeConnectSnippet>
+        <div className="content-stretch flex items-center justify-between overflow-clip px-[16px] relative shrink-0 w-full" data-node-id="399:14515">
+          <div className="bg-[rgba(255,255,255,0.1)] content-stretch flex flex-col items-center justify-center p-[8px] relative rounded-[360px] shadow-[0px_3px_12px_0px_rgba(0,0,0,0.05)] shrink-0 size-[40px]" data-node-id="399:14516">
+            <div className="relative shrink-0 size-[20px]" data-node-id="399:14517" data-name="Frame">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame1} />
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col gap-[8px] items-center justify-center relative shrink-0" data-node-id="399:14519">
+            <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,#1c2024)] text-center whitespace-nowrap" data-node-id="399:14520">
+              Exchange Value
+            </p>
+            <div className="content-stretch flex gap-[2px] items-center justify-center relative shrink-0" data-node-id="399:14521">
+              <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[normal] not-italic relative shrink-0 text-[20px] text-[color:var(--text\/success,#067647)] text-center whitespace-nowrap" data-node-id="399:14522">
+                $138.57
+              </p>
+              <div className="flex items-center justify-center relative shrink-0 size-[12px]" data-node-id="399:14523">
+                <div className="-rotate-90 flex-none">
+                  <div className="relative size-[12px]" data-name="Frame">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame2} />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-[rgba(255,255,255,0.1)] content-stretch flex items-center justify-center overflow-clip p-[8px] relative rounded-[360px] shadow-[0px_3px_12px_0px_rgba(0,0,0,0.05)] shrink-0 size-[40px]" data-node-id="399:14525">
+            <div className="relative shrink-0 size-[20px]" data-node-id="399:14526" data-name="Frame">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame3} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute content-stretch flex gap-[8px] items-center left-[16px] top-[138px]" data-node-id="399:14530">
+        <div className="bg-[var(--surface\/sunked,#e9ecef)] content-stretch flex gap-[6px] h-[32px] items-center overflow-clip px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="399:14531">
+          <div className="relative shrink-0 size-[16px]" data-node-id="399:14532" data-name="Frame">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame4} />
+          </div>
+          <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/brand,#124fc6)] text-center whitespace-nowrap" data-node-id="399:14534">
+            Free Shipping
+          </p>
+        </div>
+        <div className="bg-[var(--surface\/sunked,#e9ecef)] content-stretch flex h-[32px] items-center overflow-clip px-[8px] py-[4px] relative rounded-[12px] shrink-0" data-node-id="399:14535">
+          <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/brand,#124fc6)] text-center whitespace-nowrap" data-node-id="399:14536">
+            $12.59 exchange bonus
+          </p>
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute backdrop-blur-[4px] bg-gradient-to-b bottom-[247px] content-stretch flex flex-col from-[rgba(248,246,245,0)] items-center left-1/2 pb-[40px] px-[16px] to-[rgba(248,246,245,0.9)] w-[393px]" data-node-id="399:14537">
+        <Button buttonTitle="Continue with Refund" className="bg-[var(--surface\/black,#1c2024)] content-stretch cursor-pointer flex h-[48px] items-center justify-center overflow-clip px-[108px] py-[6px] relative rounded-[16px] shrink-0 w-[361px]" />
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Label/default-regular: Font(family: "Inter", style: Regular, size: 14, weight: 400, lineHeight: 18, letterSpacing: 0), Heading/section-strong: Font(family: "Inter", style: Semi Bold, size: 16, weight: 600, lineHeight: 24, letterSpacing: 0), Label/default-strong: Font(family: "Inter", style: Semi Bold, size: 14, weight: 600, lineHeight: 18, letterSpacing: 0), Title/page-strong: Font(family: "Inter", style: Semi Bold, size: 18, weight: 600, lineHeight: 24, letterSpacing: 0), Body/default-regular: Font(family: "Inter", style: Regular, size: 14, weight: 400, lineHeight: 22, letterSpacing: 0).
+
+If the node is connected to a code component in the users codebase via Code Connect, the connected component will be included in the final markup wrapped in a CodeConnectSnippet element, with relevant imports at the top of the file. There are two formats: 1. Single snippet: <CodeConnectSnippet data-snippet-language="React"><TitleComponent>Hello World</TitleComponent></CodeConnectSnippet> 2. Multiple options: <CodeConnectSnippet data-snippet-language="React" options={[<Button variant="primary" />, <Button variant="secondary" />]} /> IMPORTANT: the CodeConnectSnippet wrapper element should not be part of the final code. For the options format, choose the single most appropriate option to use in your implementation. The source of the code component will be in the import path, e.g. import {ComponentName } from 'path/to/component'; IMPORTANT: the import path may not be relative/may point to a URL, so you should search for the component in the codebase and MUST use it if possible.
+
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.

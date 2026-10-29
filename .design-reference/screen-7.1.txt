@@ -1,0 +1,402 @@
+const assetPathPrefix = "https://www.figma.com/api/mcp/asset/d0a7d8fc-5f9b-45b4-8612-158ad73a43ca";
+const imgImage36 = `${assetPathPrefix}/853cd.png`;
+const imgFrame = `${assetPathPrefix}/4eb6a.svg`;
+const imgFrame1 = `${assetPathPrefix}/2e280.svg`;
+const imgImage37 = `${assetPathPrefix}/76c9c.png`;
+const imgImage38 = `${assetPathPrefix}/0bd7a.png`;
+const imgScreenshot20261011At124511Pm1 = `${assetPathPrefix}/dec08.png`;
+const imgImage39 = `${assetPathPrefix}/6706e.png`;
+const imgImage40 = `${assetPathPrefix}/12015.png`;
+const imgFrame2 = `${assetPathPrefix}/aa278.svg`;
+const imgFrame3 = `${assetPathPrefix}/6fd9f.svg`;
+const imgFrame4 = `${assetPathPrefix}/dd81f.svg`;
+const imgFrame5 = `${assetPathPrefix}/1f2ec.svg`;
+const imgFrame6 = `${assetPathPrefix}/f7b5b.svg`;
+const imgFrame7 = `${assetPathPrefix}/45e98.svg`;
+const imgFrame8 = `${assetPathPrefix}/9d94b.svg`;
+const imgFrame9 = `${assetPathPrefix}/d2ccb.svg`;
+
+type ButtonProps = {
+  className?: string;
+  buttonTitle?: string;
+  type?: "Default";
+};
+
+function Button({ className, buttonTitle = "Button Text", type = "Default" }: ButtonProps) {
+  return (
+    <a className={className || "bg-[var(--surface\\/black,#1c2024)] content-stretch cursor-pointer flex h-[48px] items-center justify-center overflow-clip px-[108px] py-[6px] relative rounded-[16px] w-[361px]"} data-node-id="418:15790">
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/invert,white)] text-left whitespace-nowrap" data-node-id="418:15789">
+        {buttonTitle}
+      </p>
+    </a>
+  );
+}
+
+type ChipProps = {
+  className?: string;
+  chipLabel?: string;
+};
+
+function Chip({ className, chipLabel = "Chip Label" }: ChipProps) {
+  return (
+    <div className={className || "bg-[var(--surface\\/sunked,#e9ecef)] content-stretch flex h-[32px] items-center overflow-clip px-[12px] py-[8px] relative rounded-[12px]"} data-node-id="418:15902" data-name="Chip">
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="418:15901">
+        {chipLabel}
+      </p>
+    </div>
+  );
+}
+
+type ReturnLocationCardProps = {
+  className?: string;
+  box?: boolean;
+  cost?: string;
+  label?: boolean;
+  name?: string;
+  subtext?: string;
+};
+
+function ReturnLocationCard({ className, box = true, cost = "Cost", label = true, name = "Location Name", subtext = "pickup time / distance" }: ReturnLocationCardProps) {
+  return (
+    <div className={className || "bg-[var(--surface\\/background,#f7f8f9)] border border-[var(--border\\/secondary,#d2d6da)] border-solid content-stretch flex h-[88px] items-center overflow-clip py-[847px] relative rounded-[24px] w-[361px]"} data-node-id="418:16259">
+      <div className="content-stretch flex flex-col h-[88px] items-center justify-center overflow-clip px-[16px] py-[8px] relative rounded-[12px] shrink-0 w-[60px]" data-node-id="418:16237">
+        <div className="h-[64px] relative shrink-0 w-[36px]" data-node-id="418:16238" data-name="image 36">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <img alt="" className="absolute h-[67.19%] left-[-0.33%] max-w-none top-[16.41%] w-[100.65%]" src={imgImage36} />
+          </div>
+        </div>
+      </div>
+      <div className="content-stretch flex items-center justify-between pr-[16px] relative shrink-0 w-[301px]" data-node-id="418:16239">
+        <div className="content-stretch flex flex-col gap-[10px] items-start relative shrink-0" data-node-id="418:16240">
+          <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,#1c2024)] whitespace-nowrap" data-node-id="418:16241">
+            {name}
+          </p>
+          <div className="content-stretch flex gap-[8px] items-center relative shrink-0" data-node-id="418:16242">
+            <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="418:16243">
+              <div className="relative shrink-0 size-[16px]" data-node-id="418:16244" data-name="Frame">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+              </div>
+              <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="418:16249">
+                Box
+              </p>
+            </div>
+            <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="418:16250">
+              <div className="relative shrink-0 size-[16px]" data-node-id="418:16251" data-name="Frame">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame1} />
+              </div>
+              <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="418:16255">
+                Label
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex items-start relative shrink-0" data-node-id="418:16256">
+            <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="418:16257">
+              {subtext}
+            </p>
+          </div>
+        </div>
+        <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="418:16258">
+          {cost}
+        </p>
+      </div>
+    </div>
+  );
+}
+
+export default function ReturnPortal71() {
+  return (
+    <div className="bg-[var(--surface\/background,#f7f8f9)] overflow-clip relative rounded-[40px] size-full" data-node-id="399:14800" data-name="Return Portal 7.1">
+      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] absolute font-['Inter:Semi_Bold'] font-semibold leading-[24px] left-[16px] not-italic text-[18px] text-[color:var(--text\/primary,#1c2024)] top-[142px] whitespace-nowrap" data-node-id="399:14801">
+        Where will you make the return?
+      </p>
+      <div className="absolute content-stretch flex flex-col gap-[16px] items-start left-[16px] top-[179px]" data-node-id="399:14802">
+        <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[24px] min-w-full not-italic relative shrink-0 text-[16px] text-[color:var(--text\/primary,#1c2024)] w-[min-content]" data-node-id="399:14803">
+          Return from your doorstep
+        </p>
+        <div className="bg-[var(--surface\/background,#f7f8f9)] border border-[var(--border\/secondary,#d2d6da)] border-solid content-stretch flex h-[88px] items-center overflow-clip py-[847px] relative rounded-[24px] shrink-0 w-[361px]" data-node-id="419:16530" data-name="ReturnLocation-Card">
+          <div className="content-stretch flex flex-col h-[88px] items-center justify-center overflow-clip px-[16px] py-[8px] relative rounded-[12px] shrink-0 w-[60px]" data-node-id="I419:16530;418:16366">
+            <div className="h-[64px] relative shrink-0 w-[36px]" data-node-id="I419:16530;418:16367" data-name="image 36">
+              <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImage37} />
+            </div>
+          </div>
+          <div className="content-stretch flex items-center justify-between pr-[16px] relative shrink-0 w-[301px]" data-node-id="I419:16530;418:16368">
+            <div className="content-stretch flex flex-col gap-[10px] items-start relative shrink-0" data-node-id="I419:16530;418:16369">
+              <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,#1c2024)] whitespace-nowrap" data-node-id="I419:16530;418:16370">
+                USPS Pickup
+              </p>
+              <div className="content-stretch flex gap-[8px] items-center relative shrink-0" data-node-id="I419:16530;418:16371">
+                <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I419:16530;418:16372">
+                  <div className="relative shrink-0 size-[16px]" data-node-id="I419:16530;418:16373" data-name="Frame">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+                  </div>
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="I419:16530;418:16378">
+                    Box
+                  </p>
+                </div>
+                <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I419:16530;418:16379">
+                  <div className="relative shrink-0 size-[16px]" data-node-id="I419:16530;418:16388" data-name="Frame">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame2} />
+                  </div>
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="I419:16530;418:16384">
+                    No Label
+                  </p>
+                </div>
+              </div>
+              <div className="content-stretch flex items-start relative shrink-0" data-node-id="I419:16530;418:16385">
+                <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="I419:16530;418:16386">
+                  Choose a pickup time
+                </p>
+              </div>
+            </div>
+            <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="I419:16530;418:16387">
+              $5.00
+            </p>
+          </div>
+        </div>
+        <ReturnLocationCard className="bg-[var(--surface\/background,#f7f8f9)] border border-[var(--border\/secondary,#d2d6da)] border-solid content-stretch flex h-[88px] items-center overflow-clip py-[847px] relative rounded-[24px] shrink-0 w-[361px]" cost="Free" name="UPS Pickup" subtext="Choose a pickup time" />
+      </div>
+      <div className="absolute content-stretch flex flex-col gap-[16px] items-start left-[16px] top-[423px] w-[361px]" data-node-id="399:14853">
+        <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full" data-node-id="399:14854">
+          <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[24px] min-w-full not-italic relative shrink-0 text-[16px] text-[color:var(--text\/primary,#1c2024)] w-[min-content]" data-node-id="399:14855">
+            Drop-off Locations
+          </p>
+          <div className="content-stretch flex gap-[8px] items-start relative shrink-0" data-node-id="418:15911">
+            <Chip chipLabel="No Label" className="bg-[var(--surface\/sunked,#e9ecef)] content-stretch flex h-[32px] items-center overflow-clip px-[12px] py-[8px] relative rounded-[12px] shrink-0" />
+            <Chip chipLabel="No Box" className="bg-[var(--surface\/sunked,#e9ecef)] content-stretch flex h-[32px] items-center overflow-clip px-[12px] py-[8px] relative rounded-[12px] shrink-0" />
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0" data-node-id="399:14861">
+          <div className="bg-[var(--surface\/background,#f7f8f9)] border border-[var(--border\/secondary,#d2d6da)] border-solid content-stretch flex h-[88px] items-center overflow-clip py-[847px] relative rounded-[24px] shrink-0 w-[361px]" data-node-id="419:16578" data-name="ReturnLocation-Card">
+            <div className="content-stretch flex flex-col h-[88px] items-center justify-center overflow-clip px-[16px] py-[8px] relative rounded-[12px] shrink-0 w-[60px]" data-node-id="I419:16578;418:16396">
+              <div className="h-[64px] relative shrink-0 w-[36px]" data-node-id="I419:16578;418:16397" data-name="image 36">
+                <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImage38} />
+              </div>
+            </div>
+            <div className="content-stretch flex items-center justify-between pr-[16px] relative shrink-0 w-[301px]" data-node-id="I419:16578;418:16398">
+              <div className="content-stretch flex flex-col gap-[10px] items-start relative shrink-0" data-node-id="I419:16578;418:16399">
+                <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,#1c2024)] whitespace-nowrap" data-node-id="I419:16578;418:16400">
+                  Levi’s In Store Return
+                </p>
+                <div className="content-stretch flex gap-[8px] items-center relative shrink-0" data-node-id="I419:16578;418:16401">
+                  <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I419:16578;418:16420">
+                    <div className="relative shrink-0 size-[16px]" data-node-id="I419:16578;418:16421" data-name="Frame">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame3} />
+                    </div>
+                    <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="I419:16578;418:16428">
+                      No Box
+                    </p>
+                  </div>
+                  <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I419:16578;418:16409">
+                    <div className="relative shrink-0 size-[16px]" data-node-id="I419:16578;418:16410" data-name="Frame">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame2} />
+                    </div>
+                    <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="I419:16578;418:16416">
+                      No Label
+                    </p>
+                  </div>
+                </div>
+                <div className="content-stretch flex items-start relative shrink-0" data-node-id="I419:16578;418:16417">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="I419:16578;418:16418">
+                    2.1 Miles away
+                  </p>
+                </div>
+              </div>
+              <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="I419:16578;418:16419">
+                Free
+              </p>
+            </div>
+          </div>
+          <div className="bg-[var(--surface\/elevated,white)] border border-[var(--border\/secondary,#d2d6da)] border-solid content-stretch flex flex-col items-start relative rounded-[24px] shrink-0 w-[361px]" data-node-id="399:14890">
+            <div className="content-stretch flex items-center overflow-clip relative shrink-0 w-full" data-node-id="399:14891">
+              <div className="content-stretch flex flex-col h-[88px] items-center justify-center overflow-clip px-[16px] py-[8px] relative rounded-[12px] shrink-0 w-[60px]" data-node-id="399:14892">
+                <div className="h-[40px] relative shrink-0 w-[33.706px]" data-node-id="399:14893" data-name="image 41">
+                  <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage36} />
+                </div>
+              </div>
+              <div className="content-stretch flex flex-[1_0_0] h-[72px] items-center justify-between min-w-px pr-[16px] relative" data-node-id="399:14894">
+                <div className="content-stretch flex flex-col gap-[10px] items-start relative shrink-0" data-node-id="399:14895">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,#1c2024)] whitespace-nowrap" data-node-id="399:14896">
+                    The UPS Store
+                  </p>
+                  <div className="content-stretch flex gap-[8px] items-center relative shrink-0" data-node-id="399:14897">
+                    <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="399:14898">
+                      <div className="relative shrink-0 size-[16px]" data-node-id="399:14899" data-name="Frame">
+                        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame3} />
+                      </div>
+                      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="399:14906">
+                        No Box
+                      </p>
+                    </div>
+                    <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="399:14907">
+                      <div className="relative shrink-0 size-[16px]" data-node-id="399:14908" data-name="Frame">
+                        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame2} />
+                      </div>
+                      <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="399:14914">
+                        No Label
+                      </p>
+                    </div>
+                  </div>
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="399:14915">
+                    1.6 Miles
+                  </p>
+                </div>
+                <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="399:14916">
+                  Free
+                </p>
+              </div>
+            </div>
+            <div className="content-stretch flex items-center overflow-clip pb-[16px] px-[16px] relative shrink-0 w-full" data-node-id="399:14917">
+              <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-[329px]" data-node-id="399:14918">
+                <div className="h-[180px] overflow-clip relative rounded-[16px] shrink-0 w-full" data-node-id="399:14919">
+                  <div className="absolute h-[396px] left-[-121px] top-[-108px] w-[572px]" data-node-id="399:14920" data-name="Screenshot 2026-10-11 at 12.45.11 PM 1">
+                    <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgScreenshot20261011At124511Pm1} />
+                  </div>
+                  <div className="absolute left-[288px] size-[32px] top-[122px]" data-node-id="399:14921" />
+                  <div className="absolute bg-[var(--surface\/elevated,white)] content-stretch flex h-[32px] items-center justify-between left-[8px] overflow-clip p-[8px] rounded-[12px] shadow-[0px_16px_48px_0px_rgba(0,0,0,0.05),0px_8px_24px_0px_rgba(0,0,0,0.05),0px_3px_12px_0px_rgba(0,0,0,0.08)] top-[140px] w-[313px]" data-node-id="399:14922">
+                    <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[normal] not-italic relative shrink-0 text-[13px] text-[color:var(--text\/primary,#1c2024)] whitespace-nowrap" data-node-id="399:14923">
+                      The UPS Store, 223 West Cougar Blvd, P...
+                    </p>
+                    <div className="relative shrink-0 size-[20px]" data-node-id="399:14924" data-name="Frame">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame4} />
+                    </div>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-node-id="399:14929">
+                  <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-node-id="399:14930">
+                    <div className="content-stretch flex gap-[12px] items-center relative shrink-0" data-node-id="399:14931">
+                      <div className="relative shrink-0 size-[16px]" data-node-id="399:14932" data-name="Frame">
+                        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame5} />
+                      </div>
+                      <div className="[word-break:break-word] content-stretch flex flex-col gap-[8px] items-start leading-[18px] not-italic relative shrink-0 text-[14px]" data-node-id="399:14935">
+                        <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Inter:Semi_Bold'] font-semibold min-w-full relative shrink-0 text-[color:var(--text\/success,#067647)] w-[min-content]" data-node-id="399:14936">
+                          Open Now
+                        </p>
+                        <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Inter:Regular'] font-normal relative shrink-0 text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="399:14937">
+                          Accepting returns until 6:30 PM
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-center relative shrink-0 size-[16px]" data-node-id="399:14938">
+                      <div className="flex-none rotate-90">
+                        <div className="relative size-[16px]" data-name="Frame">
+                          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame6} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="content-stretch flex items-center justify-between relative shrink-0 w-full" data-node-id="399:14940">
+                    <div className="content-stretch flex gap-[12px] items-center relative shrink-0" data-node-id="399:14941">
+                      <div className="relative shrink-0 size-[16px]" data-node-id="399:14942" data-name="Frame">
+                        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame7} />
+                      </div>
+                      <div className="[word-break:break-word] content-stretch flex flex-col gap-[8px] items-start not-italic relative shrink-0 text-[14px]" data-node-id="399:14947">
+                        <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Inter:Semi_Bold'] font-semibold leading-[18px] min-w-full relative shrink-0 text-[color:var(--text\/primary,#1c2024)] w-[min-content]" data-node-id="399:14948">
+                          Return Instructions
+                        </p>
+                        <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] font-['Inter:Regular'] font-normal leading-[22px] relative shrink-0 text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="399:14949">
+                          Bring return and QR code to counter
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-center relative shrink-0 size-[16px]" data-node-id="399:14950">
+                      <div className="flex-none rotate-90">
+                        <div className="relative size-[16px]" data-name="Frame">
+                          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame6} />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <Button buttonTitle="Select Location" className="bg-[var(--surface\/black,#1c2024)] content-stretch cursor-pointer flex h-[48px] items-center justify-center overflow-clip px-[108px] py-[6px] relative rounded-[16px] shrink-0 w-full" />
+              </div>
+            </div>
+          </div>
+          <div className="bg-[var(--surface\/background,#f7f8f9)] border border-[var(--border\/secondary,#d2d6da)] border-solid content-stretch flex h-[88px] items-center overflow-clip py-[847px] relative rounded-[24px] shrink-0 w-[361px]" data-node-id="419:16745" data-name="ReturnLocation-Card">
+            <div className="content-stretch flex flex-col h-[88px] items-center justify-center overflow-clip px-[16px] py-[8px] relative rounded-[12px] shrink-0 w-[60px]" data-node-id="I419:16745;418:16366">
+              <div className="h-[64px] relative shrink-0 w-[36px]" data-node-id="I419:16745;418:16367" data-name="image 36">
+                <img alt="" className="absolute inset-0 max-w-none object-contain pointer-events-none size-full" src={imgImage39} />
+              </div>
+            </div>
+            <div className="content-stretch flex items-center justify-between pr-[16px] relative shrink-0 w-[301px]" data-node-id="I419:16745;418:16368">
+              <div className="content-stretch flex flex-col gap-[10px] items-start relative shrink-0" data-node-id="I419:16745;418:16369">
+                <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,#1c2024)] whitespace-nowrap" data-node-id="I419:16745;418:16370">
+                  FedEx
+                </p>
+                <div className="content-stretch flex gap-[8px] items-center relative shrink-0" data-node-id="I419:16745;418:16371">
+                  <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I419:16745;418:16372">
+                    <div className="relative shrink-0 size-[16px]" data-node-id="I419:16745;418:16373" data-name="Frame">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame} />
+                    </div>
+                    <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="I419:16745;418:16378">
+                      Box
+                    </p>
+                  </div>
+                  <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I419:16745;418:16379">
+                    <div className="relative shrink-0 size-[16px]" data-node-id="I419:16745;418:16388" data-name="Frame">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame2} />
+                    </div>
+                    <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="I419:16745;418:16384">
+                      No Label
+                    </p>
+                  </div>
+                </div>
+                <div className="content-stretch flex items-start relative shrink-0" data-node-id="I419:16745;418:16385">
+                  <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="I419:16745;418:16386">
+                    1.9 Miles away
+                  </p>
+                </div>
+              </div>
+              <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Semi_Bold'] font-semibold leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/secondary,#53585d)] whitespace-nowrap" data-node-id="I419:16745;418:16387">
+                Free
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="-translate-x-1/2 absolute bg-[var(--surface\/background,#f7f8f9)] content-stretch flex flex-col gap-[8px] items-start left-1/2 pb-[8px] top-0 w-[393px]" data-node-id="399:14980" data-name="Header">
+        <CodeConnectSnippet data-node-id="399:14981" data-name="Status bar - iPhone">
+          {/* iOS and iPadOS 26 component */}
+          <StatusBarIPhone textTime="9:41" time="9:41" variantSize="iPhone 16 Pro and 16 Max" size="iPhone 16 Pro and 16 Max" />
+        </CodeConnectSnippet>
+        <div className="content-stretch flex items-center justify-between overflow-clip px-[16px] relative shrink-0 w-full" data-node-id="399:14982">
+          <div className="bg-[rgba(255,255,255,0.1)] content-stretch flex flex-col items-center justify-center p-[8px] relative rounded-[360px] shadow-[0px_3px_12px_0px_rgba(0,0,0,0.05)] shrink-0 size-[40px]" data-node-id="399:14983">
+            <div className="relative shrink-0 size-[20px]" data-node-id="399:14984" data-name="Frame">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame8} />
+            </div>
+          </div>
+          <div className="bg-[rgba(255,255,255,0.1)] content-stretch flex h-[40px] items-center justify-center px-[16px] py-[8px] relative rounded-[360px] shadow-[0px_3px_12px_0px_rgba(0,0,0,0.05)] shrink-0" data-node-id="399:14986">
+            <div className="content-stretch flex gap-[4px] items-center justify-end relative shrink-0" data-node-id="399:14987">
+              <p className="[text-box-edge:cap_alphabetic] [text-box-trim:trim-both] [word-break:break-word] font-['Inter:Regular'] font-normal leading-[18px] not-italic relative shrink-0 text-[14px] text-[color:var(--text\/primary,#1c2024)] whitespace-nowrap" data-node-id="399:14988">
+                84604
+              </p>
+              <div className="relative shrink-0 size-[20px]" data-node-id="399:14989" data-name="Frame">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFrame9} />
+              </div>
+            </div>
+          </div>
+          <div className="absolute content-stretch flex items-center left-[167.63px] top-[8px]" data-node-id="399:14992">
+            <div className="h-[24px] relative shrink-0 w-[57.744px]" data-node-id="399:14993" data-name="image 38">
+              <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={imgImage40} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+
+These styles are contained in the design: Title/page-strong: Font(family: "Inter", style: Semi Bold, size: 18, weight: 600, lineHeight: 24, letterSpacing: 0), Heading/section-strong: Font(family: "Inter", style: Semi Bold, size: 16, weight: 600, lineHeight: 24, letterSpacing: 0), Label/default-strong: Font(family: "Inter", style: Semi Bold, size: 14, weight: 600, lineHeight: 18, letterSpacing: 0), Label/default-regular: Font(family: "Inter", style: Regular, size: 14, weight: 400, lineHeight: 18, letterSpacing: 0), Body/default-regular: Font(family: "Inter", style: Regular, size: 14, weight: 400, lineHeight: 22, letterSpacing: 0).
+
+If the node is connected to a code component in the users codebase via Code Connect, the connected component will be included in the final markup wrapped in a CodeConnectSnippet element, with relevant imports at the top of the file. There are two formats: 1. Single snippet: <CodeConnectSnippet data-snippet-language="React"><TitleComponent>Hello World</TitleComponent></CodeConnectSnippet> 2. Multiple options: <CodeConnectSnippet data-snippet-language="React" options={[<Button variant="primary" />, <Button variant="secondary" />]} /> IMPORTANT: the CodeConnectSnippet wrapper element should not be part of the final code. For the options format, choose the single most appropriate option to use in your implementation. The source of the code component will be in the import path, e.g. import {ComponentName } from 'path/to/component'; IMPORTANT: the import path may not be relative/may point to a URL, so you should search for the component in the codebase and MUST use it if possible.
+
+The generated code contains image and SVG URL constants, e.g. const image = `${assetPathPrefix}/<asset file name>`, where assetPathPrefix is declared once at the top of the code and every asset URL interpolates it. These URLs are temporary download sources and expire after 7 days. Download each asset into the project with curl -L, then replace its URL in the generated code with a reference to the downloaded asset. Never use the temporary URLs as runtime image sources.
