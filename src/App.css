@@ -410,6 +410,8 @@
   }
 }
 
+.system-area-fill { display:none; }
+
 /* iPhone 15 Plus is the 430 × 932 baseline; use Safari’s actual viewport on phones. */
 @media (max-width:600px) {
   .phone {
@@ -431,8 +433,8 @@
   }
   /* An opaque viewport-fixed top edge keeps Safari from blending the header
      into its system scroll-edge pocket. The app's own scroll areas remain active. */
-  body::before {
-    content:'';
+  .system-area-fill {
+    display:block;
     position:fixed;
     top:0;
     left:0;
@@ -442,7 +444,9 @@
     background:var(--surface-background);
     pointer-events:none;
   }
-  body:has(.return-flow)::before { background:#737475; }
+  .phone:has(.return-flow),
+  .phone:has(.return-flow) .system-area-fill { background:#737475; }
+  .screen-scroll { background:var(--surface-background); }
   html:has(.return-flow), body:has(.return-flow) { background:#737475; }
   input { font-size:16px; }
 }

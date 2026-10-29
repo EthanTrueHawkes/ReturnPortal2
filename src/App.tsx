@@ -123,6 +123,7 @@ export default function App() {
         document.querySelector('meta[name="theme-color"]')?.setAttribute('content', modal ? '#737475' : '#f7f8f9');
     }, [modal]);
     return <div className="phone" data-current-screen={screen}>
+    <div className="system-area-fill" aria-hidden="true"/>
     <div ref={scroll} className="screen-scroll" inert={modal}>
   {screen === '1' && <Login onContinue={() => go('2')}/>}
   {(screen === '2' || modal) && <ItemList returningIds={records.map(d => d.item.id)} onBack={records.length ? () => go('8') : back} onSelect={select}/>}
