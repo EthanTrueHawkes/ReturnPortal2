@@ -1,4 +1,4 @@
-import { Button, Header, Icon, StatusBar } from './design-system/components';
+import { Button, Header, Icon } from './design-system/components';
 import { cents, money } from './data';
 import type { Location } from './data';
 import type { Draft } from './model';
@@ -116,7 +116,6 @@ export function Review({ records, location, onBack, onAdd, onLocation, onConfirm
 // New screen explicitly requested by the user; reuses the extracted typography/colors.
 export function ThankYou() {
     return <main className="thank-you" data-screen="thanks">
-    <StatusBar />
     <img className="thanks-brand" src="/assets/12015.png" alt="Levi’s"/>
     <div className="confetti" aria-hidden="true">{Array.from({ length: 48 }, (_, i) => <i key={i} style={{ left: `${(i * 37) % 100}%`, background: ['var(--text-brand)', 'var(--text-success)', 'var(--surface-black)', 'var(--surface-dark)'][i % 4], animationDelay: `${-(i % 9) * .3}s`, transform: `rotate(${i * 29}deg)` }}/>)}</div>
     <div className="thanks-copy">

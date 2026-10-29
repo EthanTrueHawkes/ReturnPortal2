@@ -62,27 +62,11 @@
   padding:var(--space-8)
 }
 .header {
-  height:118px;
+  height:56px;
   background:var(--surface-background);
   position:sticky;
   top:0;
   z-index:2
-}
-.status-bar {
-  height:62px;
-  padding:0 33px 0 50px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between
-}
-.status-bar>span {
-  font-size:17px;
-  font-weight:600
-}
-.status-levels {
-  display:flex;
-  align-items:center;
-  gap:7px
 }
 .nav-bar {
   position:relative;
@@ -426,7 +410,7 @@
   }
 }
 
-/* Use the real browser viewport on phones; retain the design frame on desktop. */
+/* iPhone 15 Plus is the 430 × 932 baseline; use Safari’s actual viewport on phones. */
 @media (max-width:600px) {
   .phone {
     width:100vw;
@@ -434,4 +418,5 @@
     min-height:0;
     border-radius:0;
   }
+  input { font-size:16px; }
 }

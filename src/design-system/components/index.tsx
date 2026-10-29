@@ -17,16 +17,6 @@ export function BackButton({ onClick, sheet = false }: {
     <Icon name={sheet ? 'sheetBack' : 'back'}/>
     </button>;
 }
-export function StatusBar() {
-    return <div className="status-bar" aria-hidden="true">
-    <span>9:41</span>
-    <div className="status-levels">
-    <img src="/assets/43048.svg" alt=""/>
-    <img src="/assets/fdb56.svg" alt=""/>
-    <img src="/assets/34fb9.svg" alt=""/>
-    </div>
-    </div>;
-}
 export function Header({ onBack, right, exchangeValue, count = 0 }: {
     onBack: () => void;
     right?: ReactNode;
@@ -34,7 +24,6 @@ export function Header({ onBack, right, exchangeValue, count = 0 }: {
     count?: number;
 }) {
     return <header className="header">
-    <StatusBar />
     <div className="nav-bar">
     <BackButton onClick={onBack}/>{exchangeValue ? <div className="exchange-value">
         <p>Exchange Value</p>

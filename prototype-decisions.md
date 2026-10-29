@@ -47,3 +47,9 @@ Return another item starts a fresh flow with its own offer eligibility and prese
 - Keep-only review omits physical-return location, shipping, and receiving sections.
 - Changing return location and adding another return work. Refund-card/address changes and information popovers are outside scope.
 - Confirm opens the requested thank-you screen with confetti. After five seconds it clears selections and returns to section 1.
+
+## Prototype device
+
+- iPhone 15 Plus is the primary test device (430 × 932 CSS pixels). Desktop uses that frame; phones fill the available browser viewport as Safari toolbars resize. Mobile input text is 16px to avoid focus zoom.
+
+- Remove the simulated system status bar throughout the prototype and position sheets 12px below the browser content edge. The real iPhone status bar remains managed by iOS.

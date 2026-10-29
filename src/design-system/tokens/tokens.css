@@ -37,8 +37,8 @@ names mirror the source. */
   --shadow-button:0 3px 12px #0000000d;
   --shadow-sheet:0 -1px 3px #0000000d,0 -4px 12px #0000001a,0 -12px 36px #00000033;
   --font-family:'Inter',sans-serif;
-  --phone-width:393px;
-  --phone-height:852px;
+  --phone-width:430px;
+  --phone-height:932px;
 }
 /* Figma text styles;
 cap trimming retains the source's measured gaps. */

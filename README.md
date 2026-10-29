@@ -9,7 +9,7 @@ npm install
 npm run dev
 ```
 
-Open [http://127.0.0.1:5173](http://127.0.0.1:5173). The preview uses a 393 × 852 phone viewport and scrolls longer screens within it. The server binds locally and requires port 5173 to be available. Any nonempty email or phone opens the sample order. Refresh starts a new test.
+Open [http://127.0.0.1:5173](http://127.0.0.1:5173). The preview targets iPhone 15 Plus at 430 × 932 CSS pixels and scrolls longer screens within it. On phones it fills the actual browser viewport, adapting to Safari’s toolbar height; mobile inputs use 16px text to avoid focus zoom. The server binds locally and requires port 5173 to be available. Any nonempty email or phone opens the sample order. Refresh starts a new test.
 
 ## Verify
 

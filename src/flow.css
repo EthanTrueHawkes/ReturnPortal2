@@ -16,7 +16,7 @@
 .dragging .sheet-handle-area { cursor:grabbing; }
 .return-flow > .sheet-dim { animation:sheet-backdrop-in 300ms ease-out; }
 @keyframes sheet-backdrop-in { from { opacity:0; } to { opacity:1; } }
-.stationary-return-banner { position:absolute; top:80px; left:16px; right:16px; z-index:6; }
+.stationary-return-banner { position:absolute; top:28px; left:16px; right:16px; z-index:6; }
 .stationary-return-banner .return-banner { margin:0; }
 .sheet-header-space { height:90px; flex:none; margin:15px 15px 0; }
 .progress-track > div { transition:width 220ms ease-out; }
@@ -46,7 +46,7 @@
 }
 .sheet {
   position:absolute;
-  top:64px;
+  top:12px;
   bottom:0;
   left:0;
   right:0;
@@ -386,7 +386,7 @@
 .success-toast {
   position:absolute;
   z-index:10;
-  top:56px;
+  top:8px;
   left:16px;
   right:16px;
   min-height:56px;
@@ -471,3 +471,4 @@
 .success-toast { animation:toast-exit 260ms ease-in 3s forwards; }
 @keyframes toast-exit { to { transform:translateY(calc(-100% - 56px)); opacity:0; } }
 @media(prefers-reduced-motion:reduce) { .success-toast { animation:none; } }
+
