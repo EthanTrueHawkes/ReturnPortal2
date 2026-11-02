@@ -47,3 +47,9 @@ Return prices and replacement prices come from the selected products. Shopping e
 - `prototype-decisions.md`: confirmed behavior and scope.
 - `design-discrepancies.md`: minor visual/data limitations and approved adaptations.
 - `qa`: browser verification notes and screenshots.
+
+## iPhone Home Screen launch
+
+The test device is an iPhone 15 Plus. The page declares standalone capability and Apple's `black-translucent` status-bar style so the page can paint behind the native status icons. The existing safe-area padding keeps controls clear of those icons.
+
+After changing these launch settings, fully quit and reopen the Home Screen web app. If it keeps the old white status strip, remove the old Home Screen shortcut and add the page again from Safari. Resizing a desktop browser cannot verify the native iOS status-bar behavior.

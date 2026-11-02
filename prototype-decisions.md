@@ -55,3 +55,5 @@ Return another item starts a fresh flow with its own offer eligibility and prese
 - Remove the simulated system status bar throughout the prototype and position sheets 12px below the browser content edge. The real iPhone status bar remains managed by iOS.
 
 - Mobile uses a viewport-fixed app shell and opaque safe-area fill to avoid Safari’s native scroll-edge blur. Scrolling stays inside the app; the safe-area fill matches the dimmed backdrop while a sheet is open.
+
+- Home Screen mode declares `apple-mobile-web-app-capable=yes` and `apple-mobile-web-app-status-bar-style=black-translucent`. The prior default launch mode kept the system status-bar area outside page rendering; `theme-color` and CSS fills alone could not establish the intended standalone status-bar behavior. Verify on the physical iPhone after relaunching/re-adding the shortcut.
