@@ -478,4 +478,7 @@
   .sheet { top:calc(env(safe-area-inset-top, 0px) + 12px); }
   .stationary-return-banner { top:calc(env(safe-area-inset-top, 0px) + 28px); }
   .success-toast { top:calc(env(safe-area-inset-top, 0px) + 8px); }
+  .sheet-footer, .size-sheet .sheet-footer {
+    padding-bottom:max(24px, calc(env(safe-area-inset-bottom, 0px) + 12px));
+  }
 }

@@ -57,4 +57,6 @@ Return another item starts a fresh flow with its own offer eligibility and prese
 
 - Mobile uses a viewport-fixed app shell and opaque safe-area fill to avoid Safari’s native scroll-edge blur. Scrolling stays inside the app; the safe-area fill matches the dimmed backdrop while a sheet is open.
 
-- Home Screen mode declares `apple-mobile-web-app-capable=yes` and `apple-mobile-web-app-status-bar-style=black-translucent`. The prior default launch mode kept the system status-bar area outside page rendering; `theme-color` and CSS fills alone could not establish the intended standalone status-bar behavior. Verify on the physical iPhone after relaunching/re-adding the shortcut.
+- Home Screen mode declares `apple-mobile-web-app-capable=yes` and omits the deprecated `apple-mobile-web-app-status-bar-style` override. The test device runs iOS 27.0.1; WebKit advises letting iOS derive its status-bar color from the webpage (https://bugs.webkit.org/show_bug.cgi?id=317153#c2). Earlier archived guidance recommending black-translucent was superseded. Verify native behavior on the physical iPhone after re-adding the shortcut.
+
+- The mobile shell stretches with fixed inset edges and auto height, avoiding a second 100dvh constraint. Dedicated opaque strips at both system edges are at least 12px tall for WebKit color sampling. The top matches the darkened backdrop during a sheet; the bottom matches the sheet surface, with footer buttons padded above the home indicator.

@@ -124,6 +124,7 @@ export default function App() {
     }, [modal]);
     return <div className="phone" data-current-screen={screen}>
     <div className="system-area-fill" aria-hidden="true"/>
+    <div className="system-bottom-fill" aria-hidden="true"/>
     <div ref={scroll} className="screen-scroll" inert={modal}>
   {screen === '1' && <Login onContinue={() => go('2')}/>}
   {(screen === '2' || modal) && <ItemList returningIds={records.map(d => d.item.id)} onBack={records.length ? () => go('8') : back} onSelect={select}/>}
