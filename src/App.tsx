@@ -93,7 +93,7 @@ export default function App() {
             go('7');
             return;
         }
-        const kind = draft.reason === 'Changed my mind' ? 'keep' : 'shop';
+        const kind = draft.reason === 'Item arrived late' ? 'keep' : 'shop';
         patch({ offerSeen: kind });
         go(kind === 'keep' ? '6alt' : '6');
     }

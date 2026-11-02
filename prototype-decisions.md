@@ -13,7 +13,8 @@ Source: Figma file `mIOLn6FgL9DrtoGVatfMuG`, AI Work page `399:12699`. The sourc
 | Reason | Offer | Acceptance | Decline |
 | --- | --- | --- | --- |
 | Too small / big / short / long | Adapted size exchange, 3.2–3.3 | Location selection, 7 | Photos, then 7; no shopping offer |
-| Changed my mind | Keep-item offer, 6 alternate, after photos | Partial-refund review, 8 | Full return via 7 |
+| Item arrived late | Keep-item offer, 6 alternate, after photos | Partial-refund review, 8 | Full return via 7 |
+| Changed my mind | Shopping exchange portal, 6.x, after photos | Exchange via 7 | Refund via 7 |
 | Every other reason, including both Other options | Shopping, 6.x, after photos | Location selection, 7 | Location selection, 7 |
 
 Return another item starts a fresh flow with its own offer eligibility and preserves the previous return.
