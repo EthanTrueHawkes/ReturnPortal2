@@ -4,7 +4,7 @@ Source: Figma file `mIOLn6FgL9DrtoGVatfMuG`, AI Work page `399:12699`. The sourc
 
 ## Entry and item selection
 
-- Any nonempty email or phone opens the sample order.
+- Lookup accepts phone numbers only. Any nonempty numeric phone entry opens the sample order, with live (###) ###-#### formatting and the phone keypad on mobile.
 - Gift returns, alternate lookup, language selection, Privacy Policy, and Policy are outside scope.
 - Search filters the sample products. Existing Returning cards are read-only. Expired items cannot be selected.
 

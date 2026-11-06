@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import type { ChangeEvent } from 'react';
 import { Button, Header, Icon, SearchField } from './design-system/components';
 import { ItemCard } from './design-system/components/ItemCard';
 import { items } from './data';
@@ -7,6 +8,38 @@ export function Login({ onContinue }: {
     onContinue: () => void;
 }) {
     const [contact, setContact] = useState('');
+    function updatePhone(event: ChangeEvent<HTMLInputElement>) {
+        const input = event.currentTarget;
+        const caret = input.selectionStart ?? input.value.length;
+        let digits = input.value.replace(/\D/g, '');
+        let digitsBeforeCaret = input.value.slice(0, caret).replace(/\D/g, '').length;
+        const deleting = (event.nativeEvent as InputEvent).inputType === 'deleteContentBackward';
+        // Backspacing a formatting separator should remove the preceding digit.
+        if (deleting && digits === contact.replace(/\D/g, '') && digitsBeforeCaret > 0) {
+            digits = digits.slice(0, digitsBeforeCaret - 1) + digits.slice(digitsBeforeCaret);
+            digitsBeforeCaret--;
+        }
+        if (digits.length === 11 && digits.startsWith('1')) {
+            digits = digits.slice(1);
+            digitsBeforeCaret = Math.max(0, digitsBeforeCaret - 1);
+        }
+        digits = digits.slice(0, 10);
+        const formatted = digits.length > 6 ? `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`
+            : digits.length > 3 ? `(${digits.slice(0, 3)}) ${digits.slice(3)}`
+            : digits ? `(${digits}` : '';
+        setContact(formatted);
+        // Preserve the edit position when inserting or deleting in the middle.
+        requestAnimationFrame(() => {
+            if (document.activeElement !== input) return;
+            let position = 0;
+            let seen = 0;
+            while (position < formatted.length && seen < digitsBeforeCaret) {
+                if (/\d/.test(formatted[position])) seen++;
+                position++;
+            }
+            input.setSelectionRange(position, position);
+        });
+    }
     return <main className="login" data-screen="1">
     <div className="login-hero">
     <img src="/assets/06e9d.png" alt="Levi’s denim collection"/>
@@ -19,8 +52,8 @@ export function Login({ onContinue }: {
         }}>
     <h1 className="title-page">Let’s find your order</h1>
     <label className="contact-field">
-    <span className="label-strong">Email or Phone number</span>
-    <input value={contact} onChange={e => setContact(e.target.value)} required placeholder="Janedoe@gmail.com" aria-label="Email or Phone number" autoComplete="email"/>
+    <span className="label-strong">Phone number</span>
+    <input type="tel" inputMode="tel" value={contact} onChange={updatePhone} required placeholder="(000) 000-0000" aria-label="Phone number" autoComplete="tel-national"/>
     </label>
     <div className="gift-link">
     <Icon name="gift"/>
